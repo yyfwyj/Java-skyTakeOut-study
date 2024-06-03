@@ -33,7 +33,6 @@ public interface EmployeeService {
      * 将员工账号启用/禁用
      * @param status 员工账号状态
      * @param id 员工ID
-     * @return Result
      */
     void startOrstop(Integer status, Long id);
 

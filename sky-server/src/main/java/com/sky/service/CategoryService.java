@@ -16,14 +16,12 @@ public interface CategoryService {
     /**
      * 新增分类
      * @param categoryDTO 新增分类前端请求体
-     * @return Result 成功响应体
      */
     void save(CategoryDTO categoryDTO);
 
     /**
      * 修改分类
      * @param categoryDTO 新增分类前端请求体
-     * @return 成功响应体
      */
     void update(CategoryDTO categoryDTO);
 
@@ -31,7 +29,6 @@ public interface CategoryService {
      * 启用、禁用分类
      * @param status 分类状态
      * @param id 分类ID
-     * @return 成功响应体
      */
     void startOrStop(Integer status, Long id);
 }
