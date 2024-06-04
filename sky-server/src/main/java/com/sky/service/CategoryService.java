@@ -2,7 +2,10 @@ package com.sky.service;
 
 import com.sky.dto.CategoryDTO;
 import com.sky.dto.CategoryPageQueryDTO;
+import com.sky.entity.Category;
 import com.sky.result.PageResult;
+
+import java.util.List;
 
 public interface CategoryService {
 
@@ -31,4 +34,11 @@ public interface CategoryService {
      * @param id 分类ID
      */
     void startOrStop(Integer status, Long id);
+
+    /**
+     * 根据类型查询分类
+     * @param type 分类类型
+     * @return 分类数组
+     */
+    List<Category> list(Integer type);
 }
