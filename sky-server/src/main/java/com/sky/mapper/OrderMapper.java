@@ -39,6 +39,9 @@ public interface OrderMapper {
     @Update("update orders set status = #{orderStatus},pay_status = #{orderPaidStatus} ,checkout_time = #{check_out_time} where id = #{id}")
     void updateStatus(Integer orderStatus, Integer orderPaidStatus, LocalDateTime check_out_time, Long id);
 
+
+    Integer reportByStatusAndOrderTime(Map map);
+
     /**
      * 查询超时且未支付的订单
      */
